@@ -4,6 +4,7 @@ import streamlit as st
 import datetime 
 import pandas as pd
 import cufflinks as cf
+import my_cufflinks as mcf
 from plotly.offline import iplot
 import ssl
 
@@ -134,7 +135,8 @@ data_exp.download_button(
 
 ## technical analysis plot
 title_str = f"{tickers_companies_dict[ticker]}'s stock price"
-qf = cf.QuantFig(df, title=title_str)
+qf = mcf.QuantFig(df, title=title_str, kind='candlestick')
+
 if volume_flag:
     qf.add_volume(color="#b742ff")
 if sma_flag:
