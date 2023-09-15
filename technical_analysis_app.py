@@ -8,7 +8,6 @@ import my_cufflinks as mcf
 from plotly.offline import iplot
 import ssl
 
-# Set the path to the CA certificates bundle
 ssl._create_default_https_context = ssl._create_unverified_context
 
 ## set offline mode for cufflinks
