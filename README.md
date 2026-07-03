@@ -1,3 +1,4 @@
+![Technical Analysis Dashboard](./img/banner.jpg)
 # Technical Analysis Dashboard
 
 Streamlit-based interactive dashboard for exploring stock price data and applying common technical indicators.
